@@ -4,12 +4,18 @@ import { request } from './RequestUtil';
  */
 export default {
   dev: {
-    registerDevices() {},
-    updateDeviceConfig() {},
-    getFormat() {},
-    send() {},
+    registerDevices() {
+    },
+    updateDeviceConfig() {
+    },
+    getFormat() {
+    },
+    send() {
+    },
   },
-  serverUrl: 'https://127.0.0.1:8888/api', // 远程服务地址
+  serverMode: 'center', // 服务模式 site or center
+  siteUrl: null, // 外站服务地址
+  centerUrl: 'https://127.0.0.1:8888/api', // 中心服务地址
   loginSchema: 'cki', // 系统模式，cki/bcs
   dbfile: 'dcs-terminal.db', // sqlite数据库文件，for test
   appId: '4', // 应用标识

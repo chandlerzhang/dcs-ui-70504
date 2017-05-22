@@ -12,16 +12,18 @@ describe('passengerserver service', () => {
    * 旅客服务查询
    */
   it('passengerserver passQueryServer', () => {
-    const passengerServerView = passengerServer.passQueryServer('6266195209642578431');
+    const passengerServerView = passengerServer.passQueryServer('6268272188860666623');
     console.log(passengerServerView);
   });
   /**
    * 旅客服务更新操作
    */
   it('updatePassengerServer', async () => {
-    const uui = '6268272188864860932'; // 旅客uui
-    const pasService = 'ROSE,VIP'; // 旅客服务信息
-    const res = await passengerServer.updatePassengerServer(uui, pasService);
+    const params = {
+      uui: '6270117564676837554',
+      passengerServer: 'ROSE,VIP',
+    };
+    const res = await passengerServer.updatePassengerServer(params);
     // expect(res.success).to.be.equals(true);
     console.log(res);
   });

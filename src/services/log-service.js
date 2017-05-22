@@ -5,9 +5,33 @@
 
 import { queryForList } from '../utils/DbUtil';
 
+// 查询商务行李信息
+export function queryBusinessBag(cmd) {
+  return query(cmd);
+}
+
+// 查询航班和商务行李信息
+export function queryLog(cmd) {
+  return query(cmd);
+}
+
+// 查询操作人操作日志
+export function queryByLmb(cmd) {
+  return query(cmd);
+}
+
+// 查询系统日志
+export function querySysLog(cmd) {
+  return query(cmd);
+}
+
+// 查询旅客日志
+export function queryPassengerLogs(params) {
+  return query(null, params);
+}
 
 export function query(cmd, uuis) {
-  let sql = 'select * from dcs_log where ';
+  let sql = 'select uui,lmb,(\'req:\'||req||\';\'||\'res:\'||res||\';\') as info,lmt from dcs_log where ';
   if (cmd) {
     cmd.toLowerCase();
     if (cmd.startsWith('/baglsb')) { // 查看商务行李操作日志 /baglsb

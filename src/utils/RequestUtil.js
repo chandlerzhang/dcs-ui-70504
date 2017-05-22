@@ -1,6 +1,10 @@
 // import Req from 'superagent';
 import Ctx from './Context';
 
+function getServerUrl() {
+  if (!Ctx.serverMode) throw 'Ctx.serverMode cannot be null';
+  return Ctx.serverMode.toLocaleLowerCase() === 'site' ? Ctx.siteUrl : Ctx.centerUrl;
+}
 /**
  * 执行ajax请求
  * @param url
@@ -18,7 +22,7 @@ export function request(url, options) {
   };
 
 
-  const requestUrl = options.absoluteUrl ? url : Ctx.serverUrl + url;
+  const requestUrl = options.absoluteUrl ? url : getServerUrl() + url;
   if (!Ctx.isNode()) { // 浏览器环境
     const $ = require('jquery');
 

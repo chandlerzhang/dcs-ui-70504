@@ -51,7 +51,7 @@ export async function queryForObject(sql, params, lu) {
     }
     throw r && r.getMsg();
   } else {
-    return request('http://192.168.9.108:9999/local/db/queryForObject', {
+    return request('http://192.168.9.247:9999/local/db/queryForObject', {
       method: 'get',
       absoluteUrl: true,
       data: {
@@ -95,7 +95,7 @@ export async function queryForList(sql, params, lu) {
     }
     throw r && r.getMsg();
   } else { // UI开发 使用请求测试服务
-    return request('http://192.168.9.108:9999/local/db/queryForList', {
+    return request('http://192.168.9.247:9999/local/db/queryForList', {
       method: 'get',
       absoluteUrl: true,
       data: {

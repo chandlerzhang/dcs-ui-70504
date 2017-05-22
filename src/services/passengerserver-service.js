@@ -44,9 +44,7 @@ export async function passQueryServer(uui) {
       }
     });
   }
-  return {
-    showDicts, selectedSvr, cn: passengerinfo.cna,
-  };
+  return { showDicts, selectedSvr };
 }
 /**
  *  修改旅客服务
@@ -54,12 +52,9 @@ export async function passQueryServer(uui) {
  * @param passengerServer
  * @returns {Promise.<*>}
  */
-export async function updatePassengerServer(uui, passengerServer) {
+export async function updatePassengerServer(params) {
   return await request('/passengerServer/updatePassengerServer', {
     method: 'post',
-    data: {
-      uui,
-      passengerServer,
-    },
+    data: params,
   });
 }

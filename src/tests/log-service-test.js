@@ -1,7 +1,7 @@
 /**
  * Created by 010794 on 2017/5/9.
  */
-import {expect} from 'chai';
+import { expect } from 'chai';
 import * as LogService from '../services/log-service';
 import * as DbUtil from '../utils/DbUtil';
 
@@ -32,14 +32,14 @@ describe('logService', () => {
 
   // 查询系统日志
   it('querySysLog', () => {
-    const syslogs = LogService.query('/syslog');
+    const syslogs = LogService.querySysLog('/syslog');
     console.info(syslogs);
   });
 
   // 查询旅客日志
   it('queryPassengerLogs', () => {
     const plus = [1, 2, 3];
-    const passengerLogs = LogService.query(null, plus);
+    const passengerLogs = LogService.queryPassengerLogs(plus);
     console.info(passengerLogs);
   });
 

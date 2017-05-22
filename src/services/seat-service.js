@@ -38,16 +38,10 @@ export function querySeatInfo(lu) {
  * @param endRn
  * @param cns
  */
-export async function operateFlightSeat(lu, st, startRn, endRn, cns) {
+export async function operateFlightSeat(params) {
   return await request('/seat/operateFlightSeat', {
     method: 'post',
-    data: {
-      lu,
-      st,
-      startRn,
-      endRn,
-      cns,
-    },
+    data: params,
   });
 }
 /**
