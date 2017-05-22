@@ -1,7 +1,7 @@
 /**
  * Sqlite数据库相关操作
  */
-import sql from 'sql.js';
+import SQL from 'sql.js';
 import Ctx from './Context';
 import { request } from './RequestUtil';
 
@@ -12,7 +12,7 @@ export function loadDbForTest() {
   const dbFile = `./src/tests/${Ctx.dbfile}`;
   const fs = require('fs');
   global.window = {};
-  window.DB = new sql.Database(fs.readFileSync(dbFile));
+  window.DB = new SQL.Database(fs.readFileSync(dbFile));
 }
 
 /**
