@@ -1,0 +1,12 @@
+.pDetailRow {
+	padding-top: 5px;
+}
+.pDetailRow div {
+	line-height: 30px;
+}
+.rowLabel {
+	text-align: right;
+}
+.rowLabel + div {
+	text-align: left;
+}

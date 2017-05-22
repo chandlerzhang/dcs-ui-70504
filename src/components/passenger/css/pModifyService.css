@@ -1,0 +1,63 @@
+
+.pmodifyservice {
+	width: 100%;
+	display: inline-block;
+	padding-right: 20px
+}
+
+.pmodifyservice .rowContainer {
+	max-height: 500px;
+	overflow: auto;
+}
+
+.pmodifyservice .totalBox ,
+.pmodifyservice .selectedBox {
+	width:40%;
+	float: left;
+}
+
+.pmodifyservice .buttonBox {
+	width:20%;
+	float: left;
+	text-align: center;
+	margin: 0;
+}
+
+.pmodifyservice .statuesTitle {
+	line-height: 40px;
+	padding-left: 10px;
+	display: block;
+	background-color: #E6F3FC
+}
+.pmodifyservice  p {
+	line-height: 40px;
+}
+.pmodifyservice .rowHeader {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #666666;
+	background-color: #F4F4F4;
+}
+
+.pmodifyservice .row {
+	text-align: center;
+	line-height: 40px;
+	border-top: 1px solid #e6e6e6 ;
+}
+.pmodifyservice .col {
+	border-left: 1px solid #e6e6e6 ;
+}
+.pmodifyservice .row .col:first-child {
+	border-left: none ;
+}
+
+.pmodifyservice .buttonBox button {
+	display: block;
+	margin:0 auto;
+	margin-top: 120px;
+}
+
+.pmodifyservice .rowContainer p  {
+	border-top: 1px solid #e6e6e6 ;
+	text-align: center;
+}

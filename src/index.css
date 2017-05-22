@@ -1,0 +1,11 @@
+
+body{overflow: hidden;}
+
+.main {
+	width: 100% ;
+	margin: 0 auto;
+	margin-left: 10px;
+}
+.container {
+	width: 100%;
+}

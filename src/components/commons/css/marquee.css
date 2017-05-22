@@ -1,0 +1,14 @@
+
+.marqueeWrapper {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+.marqueeWrapper span {
+	line-height: 12px;
+	width: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}

@@ -1,0 +1,9 @@
+
+.pList {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.pList div[class='ant-table-wrapper']  {
+	margin-right: 18px;
+}

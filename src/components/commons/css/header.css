@@ -1,0 +1,99 @@
+.topWrapper {
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.topHelp {
+	height: 40px;
+}
+.topHelp .title {
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center ;
+	margin-left: 6px ;
+}
+.topHelp .headerMenu {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+.topHelp a {
+	display: inline-block;
+	width: 76px;
+	line-height: 40px;
+	margin-left: 12px;
+	color:#000000;
+	font-size: 14px;
+}
+.topHelp a:last-child{
+	margin-left: 2px;
+}
+.topSearch {
+	width: calc(100% - 600px);
+	height: 40px;
+	border: 1px solid #bcbcbc ;
+	display: inline-block;
+	margin-left: 20px;
+}
+.topSearch .searchArrow {
+	width: 38px;
+}
+.topSearch input {
+	width: calc(100% - 38px);
+	overflow-x: hidden;
+	border: none ;
+	height: 100%;
+	outline: none;
+}
+.topHelp>button{
+    height: 40px;
+    border-radius: 0;
+}
+.topSearch a {
+	width: 60px;
+	height: 100%;
+	background-color: #6B6B6B ;
+	display: inline-block;
+	color: #ffffff;
+	float: right;
+	margin-left: 0;
+	text-align:center;
+}
+
+.topWrapper .breadcrumb {
+	display: inline-block;
+	width: auto;
+}
+.topNotice {
+	line-height: 40px;
+	margin-top: 10px;
+}
+
+.iconbars {
+    font-size: 28px;
+    vertical-align: -5px
+}
+.iconwifi,.iconquestion,.iconuser{
+	margin-right: 8px
+}
+
+.notificationBox {
+	width: calc(100% - 300px);
+	display: inline-block;
+	/*float: right;*/
+	margin-left: 100px;
+}
+
+.notificationBox b {
+	width: 40px;
+	height: 100%;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.notificationBox div {
+	width: calc(100% - 64px);
+}
