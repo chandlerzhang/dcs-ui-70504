@@ -17,11 +17,15 @@ export default {
       'externals': [
         {
           'react': 'React',
+          'react-dom': 'ReactDOM',
           'sql.js': 'SQL',
           'jquery': '$',
         },
         /moment/,
         /ajv/,
+        /pako/,
+        /tweetnacl/,
+        /superagent/,
       ],
     }
   }
